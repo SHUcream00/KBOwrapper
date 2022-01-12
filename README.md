@@ -7,14 +7,14 @@
 
 <div align="center">
   <a href="https://github.com/SHUcream00/KBOwrapper">
-    <img src="images/mpi.gif">
+    <img src="images/logo.png">
   </a>
 
   <h3 align="center">KBOwrapper</h3>
 
 </div>
 
-This project helps users to [Message Passing Interface](https://en.wikipedia.org/wiki/Message_Passing_Interface) to create a distributed program that creates and outputs the transpose of the original matrix. There will be only one process with rank 0, that will read the file name with the input data, read from the file the values of n and m, read from the file the entire matrix, and will output the resulting matrix on the screen. All the other processes will receive portions of the matrix and contribute to creating the transposed matrix.
+This project is intended to help baseball fans all across the world to look up the player data, ongoing matches including broadcasting information, and  [Korean Baseball Organization League](https://en.wikipedia.org/wiki/KBO_League) easily via code.
 
 <!-- TABLE OF CONTENTS -->
 <details>
@@ -49,13 +49,7 @@ This project helps users to [Message Passing Interface](https://en.wikipedia.org
 
 ![Sample_screenshot][example_ss]
 
-There are many ways to build a distributed, scalable program to achieve high performance. 
-This project is built as demonstration of one of such parallel programming models using [MSMPI](https://docs.microsoft.com/en-us/message-passing-interface/microsoft-mpi), to distribute mathematical operations on several threads to improve scalabilty, processing speed.
-
-This program can be further modified to comply with other requirements.
-
-With this program, you can:
-* Transpose your beautiful matrix elegantly with parallel process.
+Under construction
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -64,7 +58,7 @@ With this program, you can:
 ### Built With
 
 * [Python](https://www.python.org/)
-* [mpi4py](https://mpi4py.readthedocs.io/en/stable/)
+* [Beautiful Soup for Python 3](https://www.crummy.com/software/BeautifulSoup/bs4/doc/)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -73,22 +67,22 @@ With this program, you can:
 <!-- GETTING STARTED -->
 ## Getting Started
 
-This is a simple code with only dependency being [mpi4py](https://mpi4py.readthedocs.io/en/stable/)
+This is a simple code with only dependency being [Beautiful Soup](https://www.crummy.com/software/BeautifulSoup/bs4/doc/)
 
 ### Prerequisites
 
-MPI_Matrix_Transpose requires [mpi4py](https://mpi4py.readthedocs.io/en/stable/) library to run. 
+KBOwrapper requires [Beautiful Soup](https://www.crummy.com/software/BeautifulSoup/bs4/doc/) library to run. 
 You can easily install the library through pip.
-* mpi4py
+* Beautiful Soup 4
   ```sh
-  pip -install mpi4py
+  pip -install bs4
   ```
 
 ### Installation
 
 1. Clone the repo
    ```sh
-   git clone https://github.com/SHUcream00/MPI_Matrix_Transpose
+   git clone https://github.com/SHUcream00/KBOwrapper
    ```
 
 <p align="right">(<a href="#top">back to top</a>)</p>
@@ -106,10 +100,12 @@ You can easily install the library through pip.
 <!-- ROADMAP -->
 ## Roadmap
 
-- [x] Implement MPI
-- [x] Finalize
+- [x] Implement Player data scrapper
+- [x] Implement Standing and Broadcast information scrapper
+- [x] Implement Asynchonous functions for improved performance
+- [ ] Polish the code
 
-This project is final.
+This project is expected to be finalized soon
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -118,7 +114,7 @@ This project is final.
 <!-- CONTRIBUTING -->
 ## Contributing
 
-This project is final and not being maintained. You can fork this repository and keep going on.
+You can fork this repo and make pull request to make contribution.
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -149,6 +145,8 @@ I send my thanks to the authors of the following resources for helping me get th
 
 * [Othneil Drew's Readme Template](https://github.com/othneildrew/Best-README-Template)
 
+As well as to all the baseball fans across the globe.
+
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
 [linkedin-shield]: https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white
@@ -156,4 +154,5 @@ I send my thanks to the authors of the following resources for helping me get th
 [example_ss]: images/example.png
 [example_ss2]: images/MPI_Gather.gif
 [example_ss3]: images/MPI_Scatter.gif
+[logo]: images/logo.png
 
